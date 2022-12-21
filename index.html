@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="header">Blackjack</h1>
+        <h2 id="status-el">Want to play a round <span class="player-name"></span>? </h2>
+        
+        <div class="boards">
+        <div class="board">
+            <h2 class="details">Banker </h2>
+            <h3 class="details">Cards: <span id="banker-card" class="color-adjust"></span></h3>
+            <h3 class="details">Value: <span id="banker-sum" class="color-adjust"></span></h3>
+        </div>
+        <div class="board">
+            <h2 class="details"><span class="player-name" id="color-adjust"></span></h2>
+            <h3 class="details">Cards: <span id="player-card" class="color-adjust"></span></h3>
+            <h3 class="details">Value: <span id="player-sum" class="color-adjust"></span></h3>
+        </div>
+        </div>
+        
+        <button id="button-start" onclick="initializeGame()">START GAME</button>
+        <div>
+            <button id="new-card" onclick="hit()">HIT</button>
+            <button id="new-card" onclick="stand()">STAND</button>
+        </div>
+        <h3><span class="player-name"></span>'s Money ($<span id="player-money"></span>)</h3>
+
+        <script src="index.js"></script>
+    </body>
+</html>

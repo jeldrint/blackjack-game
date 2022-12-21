@@ -1,0 +1,38 @@
+*{
+    background-color: rgb(33,33,33);
+    color: aliceblue;
+
+    font-family: roboto, Arial, sans-serif;
+    text-align: center;
+}
+
+.details{
+    text-align: left;
+    margin-left: 10px;
+    color: rgb(33,33,33);
+    background-color: aliceblue;
+}
+.color-adjust, #color-adjust{
+    color: rgb(33,33,33);
+    background-color: aliceblue;
+}
+
+button{
+    font-size: medium;
+    margin: 3px;
+}
+
+.board{
+    width: 400px;
+    height: 150px;
+    background-color: aliceblue;
+    border: solid 1px rgb(33,33,33);
+    margin: 10px;
+    
+}
+
+.boards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
